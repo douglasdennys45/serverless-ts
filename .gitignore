@@ -6,3 +6,5 @@ build
 .env
 .DS_Store
 globalConfig.json
+host.json
+local.settings.json
