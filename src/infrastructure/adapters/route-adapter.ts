@@ -18,7 +18,6 @@ export const routeAdapter: Adapter = (controller: Controller) => async (context:
         'Content-Type': 'application/json'
       },
       body: {
-        requestId: context.res?._wrapper_log_request_id,
         data: body
       }
     }
@@ -29,7 +28,6 @@ export const routeAdapter: Adapter = (controller: Controller) => async (context:
         'Content-Type': 'application/json'
       },
       body: {
-        requestId: context.res?._wrapper_log_request_id,
         error
       }
     }

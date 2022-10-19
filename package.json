@@ -23,7 +23,6 @@
   },
   "devDependencies": {
     "@faker-js/faker": "^7.6.0",
-    "@jest-mock/express": "^2.0.1",
     "@shelf/jest-mongodb": "^4.1.1",
     "@types/dotenv": "^8.2.0",
     "@types/jest": "^29.1.2",
