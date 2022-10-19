@@ -1,4 +1,5 @@
 coverage
+addUser
 node_modules
 build
 .idea
