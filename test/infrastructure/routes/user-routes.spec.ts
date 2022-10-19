@@ -3,7 +3,6 @@ import { Collection } from 'mongodb'
 
 import { MongoConnection } from '@/infrastructure/database/mongodb'
 import { addUser } from '@/main'
-// eslint-disable-next-line @typescript-eslint/no-var-requires
 const { runStubFunctionFromBindings, createHttpTrigger } = require('stub-azure-function-context')
 
 let collection: Collection
