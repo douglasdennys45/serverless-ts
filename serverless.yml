@@ -1,0 +1,42 @@
+service: serverless-ts
+
+provider:
+  name: azure
+  runtime: nodejs14
+  region: ${opt:region, 'eastus'}
+  stage: ${opt:stage, 'dev'}
+  os: linux
+  type: premium
+  environment:
+    SLS_DEBUG: "*"
+    MONGO_URL: ${MONGO_URL}
+
+plugins:
+  - serverless-azure-functions
+  - serverless-dotenv-plugin
+
+package:
+  exclude:
+    - .gitignore
+    - .editorconfig
+    - .eslintrc.js
+    - .lintstagedrc.json
+    - jest-mongodb-config.js
+    - jest.config.js
+    - README.md
+    - globalConfig.json
+    - host.json
+    - local.settings.json
+    - docs/**
+    - .husky/**
+    - .git/**
+
+functions:
+  addUser:
+    handler: build/main.addUser
+    events:
+      - http: true
+        route: v1/users
+        methods:
+          - POST
+        authLevel: anonymous
