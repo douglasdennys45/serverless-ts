@@ -21,7 +21,6 @@ Boilerplate to streamline the development process with some out-of-the-box use c
 │   │   ├── config            # Application setup folder
 │   │   ├── database          # Database configuration folder
 │   │   ├── factories         # Dependency injection folder
-│   │   ├── middlewares       # Middlewares folder
 │   │   ├── routes            # Routes folder
 │   ├── interfaces            # Folder for the purpose of converting data in the most accessible and convenient way possible for the entities and use cases
 │   │   ├── contracts         # Folder that will indirectly connect the business layer with the external layer
